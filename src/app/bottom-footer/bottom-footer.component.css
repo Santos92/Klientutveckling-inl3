@@ -1,0 +1,31 @@
+.offset-custom {
+    margin:0 auto;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+.weatherHead{
+    background: rgba(120,120,120,0.7);
+}
+
+tbody td {
+    vertical-align: middle;
+}
+.table {
+    border-bottom: 1px solid white;
+}
+tr:nth-child(even) {
+    background: rgba(120,120,120,0.7);
+}
+
+/********************* MEDIA QUERYS *************************/
+
+@media (max-width: 525px) {
+    .ifBigWidth {
+        display: none;
+    }
+}
+@media (max-width: 600px) {
+    .ifBiggerWidth {
+        display: none;
+    }
+}

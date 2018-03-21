@@ -1,0 +1,28 @@
+
+<section>
+    <article>
+        <header>
+            <h3>Click the map to get directions to planka funchal</h3>
+        </header>
+        <h5> choose travel mode</h5>
+        <select id="mode" value="DRIVING">
+          <option value="DRIVING">Driving</option>
+          <option value="WALKING">Walking</option>
+          <option value="TRANSIT">Transit</option>
+        </select>
+        <agm-map [latitude]='lat' [longitude]='lng' [zoom]='zoom' [streetViewControl]='false'
+        (mapClick)="getDirection($event)"> 
+
+            <agm-marker *ngIf="!dir" [latitude]='lat' [longitude]='lng'></agm-marker>
+            <agm-direction *ngIf="dir" [origin]="dir.origin" [destination]="dir.destination"
+            [travelMode]="dir.travelMode"
+            [panel]="Directions"
+            [renderOptions]="options"></agm-direction>
+
+
+
+
+        </agm-map>
+        <div id="directions" #Directions></div>
+        </article>
+</section>

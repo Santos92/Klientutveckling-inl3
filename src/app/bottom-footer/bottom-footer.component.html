@@ -1,0 +1,87 @@
+<div class="row">
+    <section class="contentBox col-md-4 order-md-1 offset-custom col-10 text-center">
+        <article>
+            <header>
+                <h3>
+                    Why Planka ?
+                </h3>
+            </header>
+            <p>
+                 Some of our specialities are served on hot Oak Planks, in the same way as in many of the Restaurants in Stockholm and all over Sweden.
+            </p>
+        </article>
+    </section>
+    <section class="contentBox col-md-3  order-md-2 offset-custom col-10 text-center">
+        <article>
+            <header>
+                <h3>
+                    Opening hours:
+                </h3>
+            </header>
+            <p>
+                Monday to Sunday<br>
+                11:00h - 23:30h<br>
+                Kitchen Open until 22:30h
+            </p>
+        </article>
+    </section>
+    <section class="contentBox col-md-3  order-md-1 offset-custom col-10 text-center">
+        <article>
+            <header>
+                <h3>
+                    Address:
+                </h3>
+            </header>
+            <p>
+                Caminho do Meio 112<br>9060-329, Funchal, Portugal
+            </p>
+            
+        </article>
+    </section>
+    <section class="contentBox order-md-2 offset-custom col-10 text-center">
+        <article>
+            <h3> Weather in {{weather.city.name}} </h3>
+            <table class="table">
+                <thead class="weatherHead">
+                    <tr>
+                        <th>
+                            temperature
+                        </th>
+                        <th>
+                            Time
+                        </th>
+                        <th>
+                            Weather
+                        </th>
+                        <th class="ifBigWidth">
+                            Wind
+                        </th>
+                        <th class="ifBiggerWidth">
+                            Humidity
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let number of [0,1,2,3,4,5,6]">
+                        <td>
+                            {{weather.list[number].main.temp-273.15 | number:'1.1-1'}} &deg;C
+                        </td>
+                        <td>
+                            {{weather.list[number].dt_txt | date:'shortTime'}}
+                        </td>
+                        <td>
+                            {{weather.list[number].weather[0].main }} <img width=40 height=40 src="../../assets/Images/WeatherIcons/{{weather.list[number].weather[0].icon}}.png">
+                        </td>
+                        <td class="ifBigWidth">
+                            {{weather.list[number].wind.speed | number:'1.1-1' }} m/s
+                        </td>
+                        <td class="ifBiggerWidth">
+                            {{weather.list[number].main.humidity | number:'1.0' }}%
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        </article>
+    </section>
+</div>

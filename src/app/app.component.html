@@ -1,0 +1,28 @@
+<div class="backgroundImage">
+    
+    <app-top-header></app-top-header>
+    
+    <div class="woodenBG container-fluid divider">
+        <div class="row">
+            <aside *ngIf="asideToggle" class="col-xl-3 order-2 offset-1 col-10 text-center contentBox">
+                <app-aside-content></app-aside-content>
+            </aside> 
+            <main [ngClass]="{'col-xl-6': asideToggle}" class="col-10 offset-1 contentBox">
+                <router-outlet></router-outlet>
+                
+                <section id="asideTogglerContainer">
+                    <button id="asideToggler" (click)="toggleAside()">{{!asideToggle ? 'Show side window' : 'Hide side window'}}</button>
+                </section>
+                
+            </main>
+            
+        </div>
+        
+    </div>
+    
+    <div style="height: 50px"></div>
+        <footer class="woodenBG container-fluid divider">
+            <app-bottom-footer></app-bottom-footer>
+        </footer>
+        
+</div>

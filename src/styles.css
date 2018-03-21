@@ -1,0 +1,54 @@
+/*************************** STANDARD CSS FOR WHOLE SITE *****************/
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 14px;
+    font-family: Verdana, TimesNewRoman, sans-serif; 
+    color: white;
+    background: black;
+}
+h1 {
+    font-size: 2.9em;
+}
+
+h2 {
+    font-size: 2.2em;
+}
+
+h3 {
+    font-size: 2em;
+    font-family: Trattatello
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+h5 {
+    font-size: 1.2em;
+}
+
+h6 {
+    font-size: 0.6em;
+}
+
+/*************************** STYLING FOR EVERY PAGE *****************/
+.contentBox {
+    background: rgba(0,0,0,0.6);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #fff;
+    padding: 16px;
+    border-radius: 15px;
+    height:100%;
+    /*
+    background-image: url(assets/Images/ContainerBackgrounds/ContBackground2.jpg);
+    background-size: auto;
+    background-repeat: repeat;
+    */
+    color: white;
+    overflow: hidden;
+}
+/*************************** MEDIA QUERYS *****************/

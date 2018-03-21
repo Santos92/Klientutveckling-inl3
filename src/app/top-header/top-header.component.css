@@ -1,0 +1,133 @@
+/********************* TOP SECTION STYLING *************************/
+#TopSection {
+    color: white;
+    box-shadow: 1px 10px 50px black;
+    text-align: center;
+    background: rgba(0,0,0,0.7);
+    position: fixed;
+    padding: 12px;
+    transition-duration: 0.9s;
+    z-index: 9;
+    min-width: 145px;
+}
+#TopSection nav ul li {
+	list-style: none;
+    display: inline-block;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#TopSection nav ul li a {
+    padding: 12px;
+    text-decoration: none;
+    border-radius: 20px;
+    border: 1px #aaa solid;
+    font-weight: bold;
+    transition-duration: 0.8s;
+    color: white;
+}
+
+#TopSection nav ul li .active {
+    background: #fff;
+    color: #000;
+    font-weight: bold;
+    border-radius: 15px;
+}
+#welcomeContainer {
+    height: 500px;
+}
+#welcome {
+    line-height: 660px;
+    height: 100%;
+    text-align: center;
+    color: white;
+}
+#welcome h1 {
+    font-size: 3.8em;
+    line-height: 1.5;
+    display: inline-block;
+    vertical-align: middle;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#titleLink {
+    text-decoration: none;
+    color:white;
+}
+
+/********************* HOVER EFFECTS *************************/
+#TopSection:hover {
+    background: rgba(0,0,0,0.0);
+    box-shadow: 0px 0px 0px black;
+    transition-duration: 0.5s;
+}
+#TopSection:hover nav ul li a {
+    background: rgba(0,0,0,0.5);
+}
+#TopSection:hover nav ul li .active {
+    background: rgba(255,255,255,1);
+}
+#TopSection nav ul li a:hover {
+    background: #fff;
+    color: #000;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+#TopSection nav ul li a:hover .active {
+    background: rgba(255,255,255,0.5);
+}
+/********************* MEDIA QUERYS *************************/
+
+@media (max-width: 470px) {
+    #logo figure img {
+        width: 50px;
+        height: auto;
+    }
+    #welcome{
+        display: none;
+    }
+    #welcomeContainer{
+        height: 120px;
+    }
+    #TopSection {
+        padding: 6px;
+        position: absolute;
+        height: 100px;
+    }
+    #TopSection nav ul li {
+        padding-top: 6px;
+        padding-bottom: 6px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+    #TopSection nav ul li a {
+        padding: 6px;
+        border-radius: 10px;
+        font-size: 0.9em;
+    }
+    #TopSection:hover {
+        background: rgba(0,0,0,0.7);
+        box-shadow: 1px 10px 50px black;
+        transition-duration: 0.5s;
+    }        
+}
+@media (max-width: 385px) {
+    #TopSection nav ul li a {
+        font-size: 0.7em;
+    }
+}
+@media (max-width: 325px) {
+    #TopSection h2{
+        font-size: 1.7em;
+    }
+    #TopSection nav ul li {
+        padding-top: 4px;
+        padding-bottom: 4px;
+        margin-top: 1px;
+        margin-bottom: 1px;
+    }
+    #TopSection nav ul li a {
+        font-size: 0.62em;
+    }
+}

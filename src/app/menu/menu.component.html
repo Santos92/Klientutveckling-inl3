@@ -1,0 +1,22 @@
+<section class="text-center">
+    <article>
+        <header>
+            <h2>Appetizers</h2>
+        </header>
+        <div *ngFor="let menuItem of appetisers" class="menuDivider">
+            <h4>{{menuItem.Name}} {{menuItem.price | currency: 'EUR'}}</h4>
+            <p>{{menuItem.Description}}</p>
+            
+        </div>
+    </article>
+    <article>
+        <header>
+            <h2>Main Course</h2>
+        </header>
+        <div *ngFor="let menuItem of mainCourse" class="menuDivider">
+            <h4>{{menuItem.Name}} {{menuItem.price | currency: 'EUR'}}</h4>
+            <p>{{menuItem.Description}}</p>
+            
+        </div>
+    </article>
+</section>
