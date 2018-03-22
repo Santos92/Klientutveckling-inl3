@@ -1,8 +1,7 @@
 /******************************* BACKGROUNDS ********************/
 .backgroundImage {
     background-image: url(/assets/Images/SiteBackgrounds/background3.jpg);
-    background-size: 100%; 
-    background-size: cover;
+    background-size: 500px, 500px; 
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: top center; 
@@ -44,4 +43,9 @@
     border-top: 1px solid white;
     margin-top:10px;
     padding-top: 3px;
+}
+@media (min-width: 470px) {
+    .backgroundImage {
+        background-size: 100% 100%;
+    }
 }
