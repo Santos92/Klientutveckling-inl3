@@ -8,10 +8,10 @@ h2 {
 .menuDivider{
     padding: 5px;
 }
-@media (min-width: 600px) {
+@media (min-width: 650px) {
     h2:after,
     h2:before{
-        content:"\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0";
+        content:"\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0";
         text-decoration:line-through;
         font-family: monospace;
         font-size: 28px;

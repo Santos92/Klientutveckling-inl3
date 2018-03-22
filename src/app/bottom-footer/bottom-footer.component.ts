@@ -14,7 +14,7 @@ export class BottomFooterComponent implements OnInit {
 	  }
 
   ngOnInit() {
-    this.weatherService.getWeather('Stockholm','se').subscribe( (data) =>{
+    this.weatherService.getWeather('Funchal','pt').subscribe( (data) =>{
     console.log(data);
     this.weather=data;
     });

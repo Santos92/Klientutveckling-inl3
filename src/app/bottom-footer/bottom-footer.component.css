@@ -17,15 +17,21 @@ tr:nth-child(even) {
     background: rgba(120,120,120,0.7);
 }
 
+.ifBigWidth {
+    display: none;
+}
+.ifBiggerWidth {
+    display: none;
+}
 /********************* MEDIA QUERYS *************************/
 
-@media (max-width: 525px) {
+@media (min-width: 525px) {
     .ifBigWidth {
-        display: none;
+        display: table-cell;
     }
 }
-@media (max-width: 600px) {
+@media (min-width: 600px) {
     .ifBiggerWidth {
-        display: none;
+        display: table-cell;
     }
 }
